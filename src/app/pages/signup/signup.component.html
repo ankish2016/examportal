@@ -1,0 +1,44 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top:20px;">
+         <div class="col-6 offset-3">
+             <div class="container text-center">
+               <img width="100px" src="../../../assets/logo.png" alt="">
+             </div>
+            <h1 class="text-center">Register Here !!</h1>
+            <form [formGroup]="regisForm" (ngSubmit)="RegisterForm()" >
+                 <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>username</mat-label>
+                    <input formControlName="username" type="text" matInput class="full-width" placeholder="enter username">
+                  </mat-form-field>
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>password</mat-label>
+                    <input formControlName="password" type="password" matInput  class="full-width" placeholder="enter password">
+                  </mat-form-field>
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>firstname</mat-label>
+                  <input type="text" formControlName="firstname" matInput  class="full-width" placeholder="enter firstname">
+                </mat-form-field>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>lastname</mat-label>
+                    <input type="text" formControlName="lastname" matInput  class="full-width" placeholder="enter lastname">
+                  </mat-form-field>
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>email</mat-label>
+                    <input formControlName="email" type="email" matInput  class="full-width" placeholder="enter email">
+                  </mat-form-field>
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>phone</mat-label>
+                    <input type="text" matInput  formControlName="phone" class="full-width" placeholder="enter phone number">
+                  </mat-form-field>
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button type="button" style="margin-left: 20px;" mat-raised-button color="accent">Reset</button>
+   
+                    </div>
+                
+            </form>
+         </div>
+        </div>
+    </div>
+</div>
